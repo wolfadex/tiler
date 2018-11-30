@@ -36,10 +36,8 @@ type alias Position =
 
 {-| Used for pretty printing a Position.
 
-    ```
     -- A position where x == 3 and y ==2
     positionToString pos == "3, 2"
-    ```
 -}
 positionToString : Position -> String
 positionToString { x, y } =
@@ -48,10 +46,8 @@ positionToString { x, y } =
 
 {-| Used to build a position from a string
 
-    ```
     positionFromString "3, 2" == Just { x = 3, y = 2 }
     positionFromString "6 8" == Nothing
-    ```
 -}
 positionFromString : String -> Maybe Position
 positionFromString s =
@@ -74,10 +70,8 @@ positionFromString s =
 
 {-| Used to get the X and Y values from a position
 
-    ```
     -- A position where x == 3 and y ==2
     positionToXY pos == (3, 2)
-    ```
 -}
 positionToXY : Position -> (Int, Int)
 positionToXY { x, y } =
@@ -130,9 +124,7 @@ boardToList board =
 The function gets 2 arguments. First a tuple of Ints, in the same format as positionToXY. Second a List of the tile(s).
 A single item in the list represents the tile being set to that item. Multiple represents that the tile is still undecided.
 
-    ```
     map (\(x, y) (tile, tiles) -> a) someBoard
-    ```
 -}
 map : ((Int, Int) -> (t, List t) -> a) -> Board t -> List a
 map func board =
@@ -160,9 +152,7 @@ Expects an Int width, Int height, function for populating the possible tiles per
 The function gets 2 arguments. First a tuple of Ints, in the same format as positionToXY. Second a List of the tile(s).
 A single item in the list represents the tile being set to that item. Multiple represents that the tile is still undecided.
 
-    ```
     generateBoard width height generateOneOf validateNeighbors seed
-    ```
 
 generateOneOf gets a tuple of Ints in the format of positionToXY and returns a tuple of (tile, List tile) representing the possible tiles for this coordinate.
 

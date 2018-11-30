@@ -8,7 +8,7 @@ The below examples were created using the code in the [examples](https://github.
 
 A [live version](https://wolfadex.github.io/tiler/)
 
-![Example](./assets/example.png)
+![Example](https://raw.githubusercontent.com/wolfadex/tiler/master/assets/example.png)
 
 Showing the borders of the tiles
-![Example Showing Tile Borders](./assets/example_showing_borders.png)
+![Example Showing Tile Borders](https://raw.githubusercontent.com/wolfadex/tiler/master/assets/example_showing_borders.png)

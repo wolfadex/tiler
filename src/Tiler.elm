@@ -10,6 +10,16 @@ module Tiler exposing
     )
 
 
+{-| Generate random tiling patters.
+
+    import Tiler exposing (Board, Neighbor(..), emptyBoard, generateBoard, map)
+
+# Tiler
+
+@docs Board, emptyBoard, generateBoard, map, Neighbor, positionToString, positionFromString, positionToXY
+-}
+
+
 import Dict exposing (Dict)
 import Random exposing (Generator, Seed)
 

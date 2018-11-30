@@ -3,7 +3,7 @@
     "name": "wolfadex/tiler",
     "summary": "Build 2D tiling boards, based off of Wave Function Collapse",
     "license": "BSD-3-Clause",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "exposed-modules": [
         "Tiler"
     ],

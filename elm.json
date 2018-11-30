@@ -1,0 +1,16 @@
+{
+    "type": "package",
+    "name": "tiler",
+    "summary": "Build 2D tiling boards, based off of Wave Function Collapse",
+    "license": "MIT",
+    "version": "1.0.0",
+    "exposed-modules": [
+        "Tiler"
+    ],
+    "elm-version": "0.19.0 <= v < 0.20.0",
+    "dependencies": {
+        "elm/core": "1.0.2 <= v < 2.0.0",
+        "elm/random": "1.0.0 <= v < 2.0.0"
+    },
+    "test-dependencies": {}
+}
